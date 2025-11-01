@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.form-card {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px; /* Makes it a circle */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #555;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #FFF;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for padding */
+}
+
+.password-wrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.password-wrapper input {
+    flex-grow: 1;
+    margin-bottom: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#pass-toggle-btn {
+    padding: 0 15px;
+    border: 1px solid #555;
+    border-left: none;
+    background-color: #444;
+    color: #FFF;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #3B8ED0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #367AB6;
+}
+
+button:disabled {
+    background-color: #555;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.error {
+    color: #FF5555;
+    margin-top: 15px;
+    height: 20px;
+}
+
+#clock-container {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#time {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logout-link {
+    margin-top: 20px;
+    color: #AAA;
+    font-size: 14px;
+}
